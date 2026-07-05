@@ -1,0 +1,10 @@
+.h1 {
+  text-align: center;
+}
+
+.list {
+  display: grid; /* 横並びにする */
+  grid-template-columns: repeat(auto-fit, 265px);
+  justify-content: center;
+  gap: 16px; /* カードどうしのすき間 */
+}
