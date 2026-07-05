@@ -1,0 +1,8 @@
+.wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.title { margin: 0; font-size: 20px; }
+.count { color: #6b7280; font-size: 14px; }

@@ -1,22 +1,22 @@
-import { Package, Pencil, Hand } from 'lucide-react';
+import { Package } from 'lucide-react';
+import CategoryTag from './CategoryTag';
+import PriceTag from './PriceTag';
+import StatusBadge from './StatusBadge';
+import Button from './Button';
 import styles from './ProductCard.module.css';
 
-const ProductCard = ({ name, price, stock }) => {
+const ProductCard = ({ name, price, stock, category }) => {
   return (
-    <div className={`${styles.card}  ${stock === 0 ? styles.soldOut : ''}`}>
-      <div className={styles.img}>{stock === 0 ? 'SOLD OUT' : ''}</div>
-      <div className={styles.textContainer}>
-        <h2 className={styles.name}>
-          <Package size={18} /> {name}
-        </h2>
-        <span className={styles.price}>
-          <span>¥</span>
-          {price.toLocaleString('ja-JP')}
-        </span>
-        <span className={styles.stock}>（在庫 {stock}）</span>
-        <button className={styles.button} disabled={stock === 0}>
-          <Pencil size={14} /> 編集
-        </button>
+    <div className={styles.card}>
+      <h3 className={styles.name}>
+        <Package size={18} /> {name}
+      </h3>
+      <CategoryTag label={category} />
+      <PriceTag price={price} />
+      <StatusBadge stock={stock} />
+      <div className={styles.actions}>
+        <Button label="編集" variant="primary" />
+        <Button label="削除" variant="danger" />
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.primary { background: #2563eb; color: #ffffff; }
+.primary:hover { background: #1d4ed8; }
+.danger  { background: #fde8e8; color: #c81e1e; }
+.danger:hover { background: #fbd5d5; }
+.ghost   { background: transparent; color: #374151; }
+.ghost:hover { background: #f3f4f6; }
