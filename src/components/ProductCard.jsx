@@ -10,9 +10,7 @@ const ProductCard = ({ name, price, stock }) => {
           <Package size={18} /> {name}
         </h2>
         <span className={styles.price}>
-          <span>
-            <Hand />¥
-          </span>
+          <span>¥</span>
           {price.toLocaleString('ja-JP')}
         </span>
         <span className={styles.stock}>（在庫 {stock}）</span>
