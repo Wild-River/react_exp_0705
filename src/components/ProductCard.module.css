@@ -14,12 +14,16 @@
   font-size: 26px;
 }
 
+svg {
+  padding-right: 0.25em;
+}
+
+.soldOut .textContainer {
+  opacity: 0.1;
+}
+
 .textContainer {
   padding: 16px;
-
-  .soldOut {
-    opacity: 0.1;
-  }
 }
 
 .button {
@@ -31,6 +35,9 @@
   color: var(--text-h);
   width: 100%;
   border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: #f8bd19;
@@ -44,6 +51,8 @@
 .name {
   font-size: 16px;
   margin: 0 0 8px 0;
+  display: flex;
+  align-items:;
 
   &:hover {
     color: #c45500;
