@@ -1,16 +1,37 @@
-# React + Vite
+![screenShot](screenshot.webp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ①課題名
 
-Currently, two official plugins are available:
+ECサイト管理画面（静的サイト）
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ②課題内容（どんな作品か）
 
-## React Compiler
+- ECショップの運営者・店舗担当者向けの管理画面ダッシュボードです。
+- サイドバー（ダッシュボード・商品・設定）とヘッダーによる画面構成に加え、商品点数・合計在庫・在庫切れ件数を表示する統計カードを備えています。
+- Reactの最初の学習プロジェクトとして、状態管理やAPI通信は行わず、静的サイトとして構築しています。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ③アプリのデプロイURL
 
-## Expanding the ESLint configuration
+（Vercelにデプロイ予定／URLは追記予定）
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ④アプリのログイン用IDまたはPassword（ある場合）
+
+認証機能はありません
+
+## ⑤工夫した点・こだわった点
+
+- Sidebar・Header・StatCard・ProductCard・CategoryTag・PriceTag・StatusBadge・Buttonなど、画面の要素を小さい単位のコンポーネントに分割し、それぞれがpropsで受け取った値をmapで一覧表示しています。
+- CSS Modulesを使い、コンポーネントごとにスタイルを閉じたスコープで管理することで、クラス名の衝突を防ぎました。
+
+## ⑥難しかった点・次回トライしたいこと（又は機能）
+
+今回が初めてのReactプロジェクトだったため、コンポーネント単位で考える設計やpropsでのデータの受け渡し方など、React特有の考え方に慣れること自体が難しかったです。React最初のプロジェクトとして以下を学びました。
+
+- propsとmapを使ったデータ表示
+- CSS Modulesでのスタイル適用
+- ライブラリ（saas）の導入
+- Vercelでのデプロイ
+
+## ⑦フリー項目（感想、シェアしたいこと等なんでも）
+
+今回はReactの最初のプロジェクトとして静的サイトでの構築になっていますが、次回はuseStateを使った状態管理（検索キーワードによる絞り込み、商品データの追加・編集・削除）や、API通信を取り入れた動的なサイトの構築にトライしたいです。
