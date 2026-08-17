@@ -12,7 +12,7 @@ ECサイト管理画面（静的サイト）
 
 ## ③アプリのデプロイURL
 
-（Vercelにデプロイ予定／URLは追記予定）
+https://react-exp-0705-seven.vercel.app/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 
